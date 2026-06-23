@@ -164,11 +164,11 @@ export default function CashierView() {
               </div>
 
               {/* TICKET DE VENTA (Optimizado para impresión física) */}
-              <div className="bg-white border border-slate-300 shadow-md p-6 rounded-2xl font-mono text-xs text-slate-800 max-w-[340px] mx-auto print:border-none print:shadow-none print:p-0 print:max-w-full">
-                
+                <div className="print-target bg-white border border-slate-300 shadow-md p-6 rounded-2xl font-mono text-xs text-slate-800 max-w-[340px] mx-auto print:border-none print:shadow-none print:p-0 print:max-w-full">
+  
                 {/* CABECERA */}
                 <div className="text-center space-y-1 border-b border-dashed border-slate-400 pb-4">
-                  <h4 className="text-base font-black uppercase tracking-wide">{businessConfig.name}</h4>
+                    <h4 className="text-base font-black uppercase tracking-wide">{businessConfig.name}</h4>
                   <p>RUC: {businessConfig.ruc}</p>
                   <p className="text-[10px] text-gray-500">{businessConfig.address}</p>
                   <p>Telf: {businessConfig.phone}</p>

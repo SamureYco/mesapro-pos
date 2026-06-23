@@ -1,1 +1,17 @@
 @import "tailwindcss";
+@media print {
+  /* Ocultar elementos de la interfaz de administración */
+  #root > div > div:not(.print-target), 
+  aside, 
+  header, 
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Ajustar el cuerpo para la impresión */
+  body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+}
